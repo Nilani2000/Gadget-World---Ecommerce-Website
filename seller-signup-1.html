@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" type="text/css"/> 
+        <title>Seller Signup</title>
+    </head>
+    <body>
+	<header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="customer-index.html"><span class="glyphicon glyphicon-home"></span> Home </a>
+                </div>
+            </div>
+		</nav>
+		</header>
+		<div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+				<h3>Create a strong password for your account.</h3>
+				<h4>Your password should be atleast 5 characters long.</h4>
+				<br>
+				<div class="form group">
+					<form> 
+                        <input type="password" size="20" class="form-control" placeholder="Password" name="password" id="psd1"required = "true" autofocus/><br>
+						<h3>Re-enter your password.</h3><br>
+                        <input type="password" size="20" class="form-control" placeholder="Re-Enter Password" name="Re-Enter" id="psd2" required = "true" onChange="checkPassword()"/>
+						<div class="regformAlert" id="divCheckPassMatch"></div>
+		<script> 
+            function checkPassword() { 
+                var pswd1 = $("#psd1").val(); 
+                var pswd2 = $("#psd2").val(); 
+				if (pswd1 != pswd2)
+                    $("#divCheckPassMatch").html("<center>Password not Matched<center>"); 
+                else
+					$("#divCheckPassMatch").html(""); 
+			} 
+        </script> <br>
+						<button type="submit" name="submit" class="btn btn-primary">Next</button>         
+										
+                    </form>
+                </div>
+            </div>
+        </div>
+	</div>
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<footer id="stylefooter">
+	<div class="container">
+	<center>
+		Copyright © Gadget world.All Rights
+		Reserved|Contact Us: +91 90000 00000
+	</center>
+	</div>
+</footer>
+</nav>
+</body>
+</html>

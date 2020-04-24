@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" type="text/css"/> 
+        <title>New Product</title>
+    </head>
+    <body>
+	<header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="seller-home.html">Gadget world</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="seller-home.html"><span class="glyphicon glyphicon-chevron-left">Back</a></li>
+					</ul>
+                </div>
+			</div>
+		</nav>
+		</header>
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+					<br><center>
+                        <h2>PRODUCT DETAILS</h2>
+						</center><br><br>
+                        <form>
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Product Name" name="product-name"  required = "true" autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Product category" name="product-type"  required = "true" autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Product Price" name="product-price"  required = "true" autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Product Description" name="product-description"  required = "true" autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control" placeholder="Quantity" name="quantity"  required = "true" autofocus>
+                            </div>
+                            <div class="form-group">
+								Add Product Images...(max. 10 images)<br><br>
+								<input type="file"  name="pic" accept="image/*" multiple required>
+                            </div>
+							<br>
+                            
+                            <center>
+                            <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+							</center>
+                        </form>
+                    </div>
+                </div>
+           </div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<footer id="stylefooter">
+<div class="container">
+<center>
+Copyright © Gadget world.All Rights
+Reserved|Contact Us: +91 90000 00000
+</center>
+</div>
+</footer>
+</nav>
+</body>
+</html>

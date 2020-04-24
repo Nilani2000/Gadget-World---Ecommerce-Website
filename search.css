@@ -1,0 +1,64 @@
+/* Style the search box inside the navigation bar */
+
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 8px;
+  font-size: 12px;
+  float: left;
+  width: 80%;
+
+ 
+}
+
+/* Style the submit button */
+form.example button {
+  
+  width: 20%;
+  padding: 8px;
+  background: #7F8C8D;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #FDEBD0;
+}
+
+form.example input[type=text] {
+  padding: 8px;
+  font-size: 12px;
+  float: left;
+  width: 80%;
+
+ 
+}
+
+/* Style the submit button */
+form.example1 button {
+  
+
+  width: 20%;
+  padding: 8px 0px 10px;
+  background: #7F8C8D;
+ 
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  margin: 0px;
+}
+
+form.example1 button:hover {
+  background: #FDEBD0;
+}
+form.example1 input[type=text] {
+  padding: 8px;
+  font-size: 12px;
+  float: left;
+  width: 80%;
+
+ 
+}

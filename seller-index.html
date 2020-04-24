@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Seller Index</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link href="seller-css.css" rel="stylesheet" type="text/css"/> 
+		<link href="login-css.css" rel="stylesheet" type="text/css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<body>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="customer-home.html"><span class="glyphicon glyphicon-home"></span>  Home </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+						<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+						<span class="glyphicon glyphicon-log-in"></span> Login </a>
+				</li></ul>
+				<div id="id01" class="modal">
+					<form class="modal-content animate">
+						<div class="imgcontainer">
+							<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+						</div>
+						<div class="container">
+							<label for="uname"><b>Username</b></label>
+							<input type="text" placeholder="Enter Username" name="uname" required>
+							<label for="psw"><b>Password</b></label>
+							<input type="password" placeholder="Enter Password" name="psw" required>
+							<button type="submit">Login</button>
+							<label>
+								<input type="checkbox" checked="checked" name="remember"> Remember me
+							</label>
+						</div>
+						<div class="container" style="background-color:#f1f1f1">
+							<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
+					</form>
+				</div>
+					
+                </div>
+			</div>
+		</nav>
+		</header>
+		<div id="banner_image">
+			<div class="container">
+				<center>
+					<div id="banner_content">
+						<h1>Welcome to Gadget World</h1>
+						<a href="seller-signup.html" class="btn btn-danger btn-lg active">Register now</a>
+					</div>
+				</center>
+			</div>
+		</div>
+	<footer id="stylefooter">
+	<div class="container">
+		<center>
+			Copyright © Gadget World.All Rights
+			Reserved|Contact Us: +91 90000 00000
+		</center>
+	</div>
+</footer>
+</body>
+</html>

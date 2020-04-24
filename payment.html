@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gadget World - Product</title>
+        <link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="cart.js" async> </script>
+    </head>
+    <body>
+	<header>
+		<link rel="stylesheet" href="cart style.css" />
+		<nav class= "navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="customer-home.html"><span class="glyphicon glyphicon-home"></span>  Home </a>
+				</div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="customer-index.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+						
+					</ul>
+                </div>
+			</div>
+		</nav>
+	</header>	
+	<center>
+	<h1>Payment Options<br><br></h1>
+	<h3>
+	Cash on delivery - - - - <button type="button" class="btn btn-primary" onclick="done()">Confirm</button></h3>
+	<script>
+	function done(){
+	alert('Your order is placed');
+        window.location.href = 'customer-home.html';
+        return false;
+	}
+	</script>
+	</center>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+<footer id="stylefooter">
+<div class="container">
+<center>
+Copyright © Gadget World.All Rights
+Reserved|Contact Us: +91 90000 00000
+</center>
+</div>
+</footer>
+</nav>
+</body>
+</html>

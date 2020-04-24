@@ -1,0 +1,166 @@
+/** slider**/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+body {
+	margin-top: 5%;
+}
+ul, ol {
+    list-style: none
+}
+.main {
+   width: 90%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff
+	object-fit: cover;
+    
+}
+.slider {
+    position: relative
+}
+.slider .slider-parent {
+    padding: 0;
+    display: flex
+}
+.slider .slider-parent .images-list {
+    background-size: cover;
+}
+.slider .slider-parent .images-list:first-of-type, .slider .slider-parent .images-list:last-of-type {
+    background-image: url(Images/Camera.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(2) {
+    background-image: url(Images/w7.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(3) {
+    background-image: url(Images/iphone.jpg)
+}
+.slider .slider-parent .images-list:nth-of-type(4) {
+    background-image: url(Images/speaker2.jpg)
+}
+
+.slider .slider-parent .images-list:nth-of-type(5) {
+    background-image: url(Images/Miband.png)
+}
+.slider .buttom-circles {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 10px
+}
+.slider .buttom-circles .buttom-circles-list {
+    display: inline-block
+}
+.slider .buttom-circles .buttom-circles-list:hover .fa:before, .slider .buttom-circles .buttom-circles-list.slider-active .fa:before {
+    content: "\f111";
+}
+.slider > .fa {
+    position: absolute;
+    top: 45%
+}
+.slider > .fa:first-of-type { right: 5px}
+.slider > .fa:last-of-type { left: 5px}
+.slider .fa { 
+    cursor: pointer
+}
+
+@media(min-width: 100px) and (max-width: 767px) {
+    .slider > .fa { font-size: 25px }
+    .slider .buttom-circles .buttom-circles-list { visibility: 10px }
+}
+@media(min-width: 768px) and (max-width: 991px) { 
+    .slider > .fa { font-size: 50px }
+    .slider .buttom-circles .buttom-circles-list { visibility: 15px }
+}
+@media(min-width: 992px) and (max-width: 1199px) { 
+    .slider > .fa { font-size: 75px }
+    .slider .buttom-circles .buttom-circles-list { font-size: 17px }
+}
+@media(min-width: 1200px) { 
+    .slider > .fa { font-size: 100px }
+    .slider .buttom-circles .buttom-circles-list { font-size: 25px }
+
+}
+
+
+
+
+
+
+#banner_image
+{
+ 
+  padding-bottom: 50px;   
+padding-top: 75px;   
+  text-align: center;    
+  color: #f8f8f8;   
+  background-size: cover;
+width: 75%;
+    margin: auto;
+    overflow: hidden;
+    color: #fff
+padding-bottom: 50px;   
+   
+  text-align: center;       
+  background-size: cover;
+
+
+}
+#banner_content 
+{
+position: relative;
+padding-top: 6%;
+padding-bottom: 6%;
+margin-top: 12%;
+margin-bottom: 12%;
+background-color: rgba(0, 0, 0, 0.7);
+max-width: 660px;
+}
+#stylefooter
+{
+padding: 15px 0;
+background-color: #101010;
+color:#fafafa;
+bottom:0;
+width: 100%;
+position: fixed;
+}
+
+	
+
+
+
+
+
+
+/**caption on slider**/
+.block-slider .caption-group{
+	position: absolute;
+    top: 50%;
+    right: 50%;
+}
+.block-slider .caption-group .title{
+	margin: 50px;
+	color: #bbd;
+}
+.block-slider .caption-group .subtitle{
+	margin: 0;
+	margin-top: 50px;
+}
+.block-slider .caption-group .button-radius{
+	margin-top: 27px;
+}
+.block-slider .caption-group .primary{
+	color: #1bd172;
+	.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+

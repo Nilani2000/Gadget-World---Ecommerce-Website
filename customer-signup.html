@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<link href="https://maxcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet" type="text/css"/> 
+
+        <title>Gadget world - Signup</title>
+
+    </head>
+    <body>
+	<header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="customer-index.html">Gadget world</a>
+                </div>
+            </div>
+		</nav>
+		</header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3">
+                    <h2>SIGN UP</h2><br>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name" name="name"  required = "true" autocomplete autofocus>
+                            </div>
+                            <div class="form group" >
+							<i class="fas fa-eye"></i>
+                                <input type="password" class="form-control" placeholder="Password" id="pass" name="password" required = "true" maxlength="10" autofocus><br>
+								<progress max="100" value="0" id="strength"></progress>
+								<script type="text/javascript">
+								var pass = document.getElementById("pass")
+								pass.addEventListener('keyup',function(){
+								checkPasswordStrength(pass.value)
+								})
+								function checkPasswordStrength(password) {
+									var strengthBar = document.getElementById("strength")
+									var strength = 0;
+									if(password.match(/[a-zA-Z0-9][a-zA-Z0-9]+/)) {
+										strength+=1
+									}
+									if(password.match(/[~<>?]/)) {
+										strength+=1
+									}
+										
+									if(password.match(/[!@#$%*&]+/)) {
+										strength+=1
+									}
+									if(password.length > 5) {
+										strength+=1
+									}
+								switch(strength){
+									case 0:
+										strengthBar.value = 0;
+										break
+									case 1:
+										strengthBar.value=30;
+										break
+									case 2:
+										strengthBar.value=60;
+										break
+									case 3:
+										strengthBar.value=90;
+										break
+									case 4:
+										strengthBar.value=100;
+										break
+								
+									}
+								}
+								</script>
+                            </div><br>
+							<div class="form-group">
+                                <input type="password" class="form-control" placeholder="Re-Enter Password" name="Re-Enter " required = "true" autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="date" class="form-control"  placeholder="Date Of Birth" name="dob" required = "true" autocomplete autofocus>
+                            </div>
+							<div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Address" name="address" required = "true" autocomplete autofocus>
+                            </div>
+							<div class="form-group">
+								<input type="email" size="30" class="form-control"  placeholder="e-mail id" name="email" required = "true" autocomplete autofocus>
+							</div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  placeholder="Contact Number" name="contact" required = "true" autocomplete autofocus>
+                            </div><br>
+								<button type="submit" name="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+		<nav class="navbar navbar-inverse navbar-fixed-bottom">
+			<footer id="stylefooter">
+				<div class="container">
+					<center>
+						Copyright © Gadget world.All Rights
+						Reserved|Contact Us: +91 90000 00000
+					</center>
+				</div>
+			</footer>
+		</nav>
+</body>
+</html>
